@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="result">0</string>
+    <string name="buttonWidth">50dp</string>
+</resources>
