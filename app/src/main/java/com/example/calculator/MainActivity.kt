@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         onGoingOperation = opButton.text.toString()
     }
 
+    @SuppressLint("SetTextI18n")
     fun computeExpression(view: View){
         val resultView: TextView = findViewById(R.id.calcResult)
         val prevView: TextView= findViewById(R.id.previousNum)

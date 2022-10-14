@@ -9,183 +9,188 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/Button9"
+        android:id="@+id/button9"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginTop="30pt"
+        android:layout_marginStart="50dp"
         android:layout_marginBottom="10dp"
         android:onClick="onNumberClick"
         android:text="9"
-        android:layout_below="@id/calcResult"
+        android:layout_toEndOf="@id/calcResult"
         app:cornerRadius="15dp"/>
 
     <Button
-        android:id="@+id/Button8"
+        android:id="@+id/button8"
         android:layout_width="60dp"
-        android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginBottom="10dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30pt"
         android:text="8"
         android:onClick="onNumberClick"
-        android:layout_toEndOf="@id/Button9"
-        android:layout_below="@id/calcResult"
+        android:layout_toEndOf="@id/button9"
         app:cornerRadius="15dp"/>
 
     <Button
-        android:id="@+id/Button7"
+        android:id="@+id/button7"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginBottom="10dp"
         android:layout_marginStart="10dp"
         android:onClick="onNumberClick"
         android:text="7"
-        android:layout_below="@id/calcResult"
-        android:layout_toEndOf="@id/Button8"
+        android:layout_marginTop="30pt"
+        android:layout_toEndOf="@id/button8"
         app:cornerRadius="15dp"/>
 
     <Button
-        android:id="@+id/Button6"
+        android:id="@+id/button6"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="50dp"
         android:layout_marginBottom="10dp"
         android:onClick="onNumberClick"
         android:text="6"
-        android:layout_below="@id/Button9"
+        android:layout_below="@id/button9"
+        android:layout_toEndOf="@id/calcResult"
         app:cornerRadius="15dp"/>
 
     <Button
-        android:id="@+id/Button5"
+        android:id="@+id/button5"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginBottom="10dp"
         android:text="5"
         android:onClick="onNumberClick"
-        android:layout_toEndOf="@id/Button6"
-        android:layout_below="@id/Button8"
+        android:layout_toEndOf="@id/button6"
+        android:layout_below="@id/button8"
         app:cornerRadius="15dp"/>
 
     <Button
-        android:id="@+id/Button4"
+        android:id="@+id/button4"
         android:layout_width="60dp"
-        android:layout_height="60dp"
         android:layout_marginStart="10dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="10dp"
         android:onClick="onNumberClick"
         android:text="4"
-        android:layout_toEndOf="@id/Button5"
-        android:layout_below="@id/Button7"
+        android:layout_toEndOf="@id/button5"
+        android:layout_below="@id/button7"
         app:cornerRadius="15dp"/>
 
 
     <Button
-        android:id="@+id/Button3"
+        android:id="@+id/button3"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="50dp"
         android:layout_marginBottom="10dp"
         android:onClick="onNumberClick"
         android:text="3"
-        android:layout_below="@id/Button6"
+        android:layout_below="@id/button6"
+        android:layout_toEndOf="@id/calcResult"
         app:cornerRadius="15dp"/>
 
     <Button
-        android:id="@+id/Button2"
+        android:id="@+id/button2"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginBottom="10dp"
         android:onClick="onNumberClick"
         android:text="2"
-        android:layout_toEndOf="@id/Button3"
-        android:layout_below="@id/Button5"
+        android:layout_toEndOf="@id/button3"
+        android:layout_below="@id/button5"
         app:cornerRadius="15dp"/>
 
     <Button
-        android:id="@+id/Button1"
+        android:id="@+id/button1"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginBottom="10dp"
         android:onClick="onNumberClick"
         android:text="1"
-        android:layout_toEndOf="@id/Button2"
-        android:layout_below="@id/Button4"
+        android:layout_toEndOf="@id/button2"
+        android:layout_below="@id/button4"
         app:cornerRadius="15dp"/>
 
     <Button
-        android:id="@+id/Button0"
+        android:id="@+id/button0"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:onClick="onNumberClick"
         android:text="0"
-        android:layout_below="@id/Button2"
-        android:layout_toEndOf="@id/ButtonAC"
+        android:layout_below="@id/button2"
+        android:layout_toEndOf="@id/buttonAC"
         app:cornerRadius="15dp"/>
+
     <Button
-        android:id="@+id/ButtonAC"
+        android:id="@+id/buttonAC"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_below="@id/Button3"
-        android:layout_marginStart="10dp"
+        android:layout_below="@id/button3"
+        android:layout_marginStart="50dp"
         android:onClick="clearMemory"
         android:text="AC"
         android:textSize="10sp"
+        android:layout_toEndOf="@id/calcResult"
         app:cornerRadius="15dp" />
 
     <Button
-        android:id="@+id/ButtonPlus"
+        android:id="@+id/buttonPlus"
         android:background="@drawable/operator_buttons"
         android:textSize="30dp"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="50dp"
         android:layout_marginBottom="10dp"
+        android:layout_marginTop="30pt"
         android:onClick="onOperatorClick"
         android:text="+"
-        android:layout_below="@id/calcResult"
+        android:layout_toEndOf="@id/button7"
         app:cornerRadius="15dp"/>
 
     <Button
-        android:id="@+id/ButtonMinus"
+        android:id="@+id/buttonMinus"
         android:background="@drawable/operator_buttons"
         android:textSize="30dp"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="50dp"
         android:layout_marginBottom="10dp"
         android:onClick="onOperatorClick"
         android:text="-"
-        android:layout_below="@id/ButtonPlus"
+        android:layout_below="@id/buttonPlus"
+        android:layout_toEndOf="@id/button4"
         app:cornerRadius="15dp"/>
 
     <Button
-        android:id="@+id/ButtonMultiply"
+        android:id="@+id/buttonMultiply"
         android:background="@drawable/operator_buttons"
         android:textSize="30dp"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="50dp"
         android:layout_marginBottom="10dp"
         android:onClick="onOperatorClick"
         android:text="*"
-        android:layout_below="@id/ButtonMinus"
+        android:layout_below="@id/buttonMinus"
+        android:layout_toEndOf="@id/button1"
         app:cornerRadius="15dp"/>
 
     <Button
-        android:id="@+id/ButtonDivide"
+        android:id="@+id/buttonDivide"
         android:background="@drawable/operator_buttons"
         android:textSize="30dp"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_below="@id/ButtonMultiply"
-        android:layout_marginEnd="10dp"
-        android:layout_alignParentEnd="true"
+        android:layout_below="@id/buttonMultiply"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@id/buttonEqual"
         android:onClick="onOperatorClick"
         android:text="/"
         app:cornerRadius="15dp"/>
@@ -200,18 +205,18 @@
         android:layout_height="80dp"
         android:layout_marginTop="5dp"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="50pt"
+        android:layout_marginBottom="20dp"
         android:layout_below="@id/previousNum"
         android:text="@string/result"/>
 
     <Button
-        android:id="@+id/ButtonEqual"
+        android:id="@+id/buttonEqual"
         android:layout_width="60dp"
-        android:layout_height="60dp"
         android:layout_marginStart="10dp"
+        android:layout_height="60dp"
         android:text="="
-        android:layout_below="@id/Button1"
-        android:layout_toEndOf="@id/Button0"
+        android:layout_below="@id/button1"
+        android:layout_toEndOf="@id/button0"
         android:onClick="computeExpression"
         app:cornerRadius="15dp"/>
 
@@ -223,7 +228,7 @@
         android:textAlignment="viewEnd"
         android:layout_width="350dp"
         android:layout_height="80dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="40pt"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"/>
 </RelativeLayout>
